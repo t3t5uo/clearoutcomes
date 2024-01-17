@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 export default function Home() {
-  const placeholderImageUrl = "/eval.jpg";
+  const placeholderImageUrl = "/gray.jpeg";
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,6 +16,7 @@ export default function Home() {
       <Head>
         <title>Clear Outcomes</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
       </Head>
 
 {/* Header Menu */}
@@ -25,10 +26,10 @@ export default function Home() {
     <img src="/clearlogo.jpeg" alt="Clear Outcomes Logo" className="h-16 mr-2" />
     </div>
     <div className="hidden md:flex space-x-4">
-      <a href="#about" className="text-gray-700 hover:text-gray-600 transition duration-300">About</a>
-      <a href="#services" className="text-gray-700 hover:text-gray-600 transition duration-300">Services</a>
-      <a href="#blog" className="text-gray-700 hover:text-gray-600 transition duration-300">Blog</a>
-      <a href="#contact" className="text-gray-700 hover:text-gray-600 transition duration-300">Contact</a>
+      <a href="#about" className="text-gray-700 hover:text-gray-600 transition duration-300">ABOUT</a>
+      <a href="#services" className="text-gray-700 hover:text-gray-600 transition duration-300">SERVICES</a>
+      <a href="#blog" className="text-gray-700 hover:text-gray-600 transition duration-300">BLOG</a>
+      <a href="#contact" className="text-gray-700 hover:text-gray-600 transition duration-300">CONTACT</a>
     </div>
     <div className="md:hidden">
       <button onClick={toggleMenu} className="text-gray-700 hover:text-gray-600 focus:outline-none">
@@ -53,9 +54,9 @@ export default function Home() {
   <div className="container mx-auto">
     <div className="w-full px-4 md:px-6 lg:px-12">
       <div className="max-w-2xl bg-white/70 backdrop-blur-sm rounded-lg p-6 md:p-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Our mission is to help UK charities demonstrate convincingly the outcomes they achieve.</h1>
+        <h1 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-6">Our mission is to help UK charities demonstrate the outcomes they achieve.</h1>
         <p className="text-lg md:text-xl text-gray-700 mb-6">Some more text here. </p>
-        <button className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300 text-lg md:text-xl">Learn More</button>
+        <button className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300 text-lg md:text-xl">LEARN MORE</button>
       </div>
     </div>
   </div>
